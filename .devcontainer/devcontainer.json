@@ -15,6 +15,14 @@
 
   // Configure tool-specific properties.
   "customizations": {
+    // acess
+    "codespaces": {
+      "repositories": {
+        "gzquse/blog": {
+          "permissions": "write-all"
+        }
+      }
+    },
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
