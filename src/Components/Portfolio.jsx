@@ -46,7 +46,7 @@ const projectList = [
     title: "My Resume Site",
     description:
       "Created from overleaf resume workshop and deployed by Azure static web app, including my experience, personality, and capability. A morndernized resume is not only reflect your experience but your whole targeted career path.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    url: "https://resume.ziqguo.com",
   },
   {
     title: "Scaling quantum circuit simulation with HPC",
