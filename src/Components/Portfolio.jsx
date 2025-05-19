@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/workspace.png";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Feel free to copy my blog template",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "The blog is fully automated by GitHub devops action and copilot deployed with Azure Static Web Apps built with React. The cool thing is that you do not need to worry about the development environment because Github feature riched code space help you boost your productivity in the cloud and you can review your page in the browser with real time preview spanning only within 8ms.",
+    url: "https://github.com/gzquse/blog",
   },
   {
-    title: "Web Development for Beginners",
+    title: "My Wolfram Theory Notebook",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Please note that this is the private work; the access based upon the request. The notebook is a collection of my QKD, quantum image encoding, circuit knitting, QUBO, QAOA research, and all the preliminaries. If you are interested in the content, please feel free to contact me. I will be happy to share it with you.",
+    url: "https://github.com/gzquse/wolfram_martin",
   },
   {
     title: "My Resume Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+      "Created from overleaf resume workshop and deployed by Azure static web app, including my experience, personality, and capability. A morndernized resume is not only reflect your experience but your whole targeted career path.",
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Scaling quantum circuit simulation with HPC",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "The automation tool for the next generation quantum circuit simulation on HPC. The tool is built with C++ and Python, and the simulation is based on the Qiskit. More importantly, the tool is good for NISQ era. Paper: https://arxiv.org/abs/2504.03967",
+    url: "https://github.com/gzquse/Q-Gear",
   },
 ];
 

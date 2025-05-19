@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/background.png";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -24,18 +24,13 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I am currently the research fellow of Computer Science Ph.D. student at Texas Tech University in Professor Ziwen Pan's group. My research interests include quantum computing and quantum cryptography. Previously, I worked with Jan Balewski at Lawrance National Berkeley Lab on quantum image encoding experiments, and Pro. Katherine James at Newcastle University in the field of Deep Learning. I received NERSC AY 2025 Director Reserve Allocation Award. Outside of research and academics, I am a huge fan of table tennis and love to travel.";
+  "I am currently the research fellow of Computer Science Ph.D. student at Texas Tech University in Professor Ziwen Pan's group. My research interests include quantum computing and quantum cryptography. Previously, I worked with Jan Balewski at Lawrance National Berkeley Lab on quantum image encoding experiments, and Pro. Katherine James at Newcastle University in the field of Biomedical Large Language Model. I received NERSC AY 2025 Director Reserve Allocation Award. Outside of research and academics, I am a huge fan of table tennis, guitar, and love to travel.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = [
-  "HPC",
-  "Programming",
-  "Mathematica",
-  "DevOps",
-];
+const skillsList = ["HPC", "Programming", "Mathematica", "DevOps"];
 
 /**
  * Use this to give more information about what you are passionate about,
@@ -43,7 +38,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my CS/Math experience I continually look for new and better ways to make highly condensed research accessible by all.";
 
 const About = () => {
   return (
