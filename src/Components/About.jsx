@@ -24,13 +24,13 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I am currently the research fellow of Computer Science Ph.D. student at Texas Tech University in Professor Ziwen Pan's group. My research interests include quantum computing and quantum cryptography. Previously, I worked with Jan Balewski at Lawrance National Berkeley Lab on quantum image encoding experiments, and Pro. Katherine James at Newcastle University in the field of Biomedical Large Language Model. I received NERSC AY 2025 Director Reserve Allocation Award. Outside of research and academics, I am a huge fan of table tennis, guitar, and love to travel.";
+  "I am currently the research fellow of department of Computer Science at Texas Tech University in Professor Ziwen Pan's group. My research interests include quantum computing and quantum cryptography. Previously, I worked with Jan Balewski at Lawrance National Berkeley Lab on quantum image encoding experiments, and Pro. Katherine James at Newcastle University in the field of Biomedical Large Language Model. I received NERSC AY 2025 Director Reserve Allocation Award. Outside of research and academics, I am a huge fan of table tennis, guitar, and love to travel.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = ["HPC", "Programming", "Mathematica", "DevOps"];
+const skillsList = ["HPC", "Physics", "Mathematica", "Quantum"];
 
 /**
  * Use this to give more information about what you are passionate about,
