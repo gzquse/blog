@@ -20,6 +20,8 @@ const researchInterests = [
   "Quantum Image Encoding",
   "Circuit Knitting",
   "NISQ Algorithms",
+  "Large Language Models",
+  "Agentic Models",
 ];
 
 const Home = ({ name, title }) => {

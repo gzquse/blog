@@ -8,6 +8,7 @@
 html,
 body {
   font-family: "Inter", sans-serif;
+  font-size: 18px;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -34,18 +35,18 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
   font-weight: 400;
 }
 
 p.large {
-  font-size: 18px;
+  font-size: 1.15rem;
 }
 
 p.small {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #555;
 }
 
