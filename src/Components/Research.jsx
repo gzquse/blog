@@ -5,6 +5,9 @@
  */
 
 import React from "react";
+import pubQuantumCircuit from "../images/pub-quantum-circuit.svg";
+import pubQuantumEncoding from "../images/pub-quantum-encoding.svg";
+import pubBiomedicalLlm from "../images/pub-biomedical-llm.svg";
 
 const publications = [
   {
@@ -15,6 +18,8 @@ const publications = [
       "An automation tool for next-generation quantum circuit simulation on HPC clusters, implemented in C++ and Python using Qiskit. Demonstrates scalable simulation of NISQ-era circuits on NERSC supercomputers.",
     url: "https://arxiv.org/abs/2504.03967",
     tags: ["Quantum Computing", "HPC", "NISQ", "Circuit Simulation"],
+    image: pubQuantumCircuit,
+    imageAlt: "Quantum circuit diagram with H, CNOT and Rz gates across 4 qubits simulated on HPC",
   },
   {
     title: "Quantum Image Encoding Experiments at NERSC",
@@ -24,6 +29,8 @@ const publications = [
       "Experimental study of quantum image encoding techniques using NERSC supercomputing resources. Explores amplitude and basis encoding strategies for near-term quantum hardware. Recipient of NERSC AY 2025 Director Reserve Allocation Award.",
     url: "https://github.com/gzquse",
     tags: ["Quantum Image Encoding", "NERSC", "HPC", "LBNL"],
+    image: pubQuantumEncoding,
+    imageAlt: "Classical pixel grid encoded into quantum amplitude states and reconstructed",
   },
   {
     title: "Biomedical Large Language Models for Clinical Decision Support",
@@ -33,6 +40,9 @@ const publications = [
       "Research on fine-tuning and adapting large language models for biomedical text mining, clinical note interpretation, and decision support systems.",
     url: "https://github.com/gzquse",
     tags: ["LLM", "Biomedical AI", "NLP", "Clinical AI"],
+    image: pubBiomedicalLlm,
+    imageAlt:
+      "Pipeline from clinical notes through a fine-tuned BioLLM to clinical decision outputs",
   },
 ];
 
@@ -51,11 +61,21 @@ const Research = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="pub-title"
+                  aria-label={`${pub.title} (opens in new tab)`}
                 >
                   {pub.title}
                 </a>
                 <p className="pub-authors">{pub.authors}</p>
                 <p className="pub-venue">{pub.venue}</p>
+                <a
+                  href={pub.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pub-figure-link"
+                  aria-label={`View paper: ${pub.title} (opens in new tab)`}
+                >
+                  <img src={pub.image} alt={pub.imageAlt} className="pub-figure" />
+                </a>
                 <p className="small" style={{ marginTop: "0.4rem" }}>
                   {pub.description}
                 </p>

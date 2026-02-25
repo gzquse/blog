@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#f0f8f4"/>
+
+  <!-- Title -->
+  <text x="200" y="20" text-anchor="middle" font-family="monospace" font-size="11" fill="#27ae60" font-weight="bold">Quantum Image Encoding · NERSC</text>
+
+  <!-- Classical image grid (left) -->
+  <text x="72" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Classical Image</text>
+  <!-- Pixel grid 6x6 -->
+  <g transform="translate(30, 50)">
+    <!-- Row 0 -->
+    <rect x="0"  y="0"  width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="14" y="0"  width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="28" y="0"  width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="42" y="0"  width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="56" y="0"  width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="70" y="0"  width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <!-- Row 1 -->
+    <rect x="0"  y="14" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="14" y="14" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="28" y="14" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="42" y="14" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="56" y="14" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="70" y="14" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <!-- Row 2 -->
+    <rect x="0"  y="28" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="14" y="28" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="28" y="28" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="42" y="28" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="56" y="28" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="70" y="28" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <!-- Row 3 -->
+    <rect x="0"  y="42" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="14" y="42" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="28" y="42" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="42" y="42" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="56" y="42" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="70" y="42" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <!-- Row 4 -->
+    <rect x="0"  y="56" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="14" y="56" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="28" y="56" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="42" y="56" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="56" y="56" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="70" y="56" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <!-- Row 5 -->
+    <rect x="0"  y="70" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="14" y="70" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+    <rect x="28" y="70" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5"/>
+    <rect x="42" y="70" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5"/>
+    <rect x="56" y="70" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5"/>
+    <rect x="70" y="70" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5"/>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="130" y1="115" x2="168" y2="115" stroke="#27ae60" stroke-width="2.5"/>
+  <polygon points="168,110 178,115 168,120" fill="#27ae60"/>
+  <text x="154" y="108" text-anchor="middle" font-family="monospace" font-size="8" fill="#27ae60">encode</text>
+
+  <!-- Quantum state representation (middle) -->
+  <text x="220" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Quantum State</text>
+  <!-- Bloch sphere style wave -->
+  <g transform="translate(178, 50)">
+    <!-- State vector labels -->
+    <text x="4"  y="16"  font-family="monospace" font-size="9" fill="#27ae60">|ψ₀⟩</text>
+    <text x="4"  y="36"  font-family="monospace" font-size="9" fill="#27ae60">|ψ₁⟩</text>
+    <text x="4"  y="56"  font-family="monospace" font-size="9" fill="#27ae60">|ψ₂⟩</text>
+    <text x="4"  y="76"  font-family="monospace" font-size="9" fill="#27ae60">|ψ₃⟩</text>
+    <text x="4"  y="96"  font-family="monospace" font-size="9" fill="#27ae60">|ψ₄⟩</text>
+    <text x="4"  y="116" font-family="monospace" font-size="9" fill="#27ae60">|ψ₅⟩</text>
+    <!-- Amplitude bars -->
+    <rect x="40" y="6"   width="30" height="8" rx="2" fill="#27ae60" opacity="0.8"/>
+    <rect x="40" y="26"  width="18" height="8" rx="2" fill="#4E567E" opacity="0.8"/>
+    <rect x="40" y="46"  width="45" height="8" rx="2" fill="#27ae60" opacity="0.8"/>
+    <rect x="40" y="66"  width="10" height="8" rx="2" fill="#4E567E" opacity="0.8"/>
+    <rect x="40" y="86"  width="38" height="8" rx="2" fill="#27ae60" opacity="0.8"/>
+    <rect x="40" y="106" width="22" height="8" rx="2" fill="#4E567E" opacity="0.8"/>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="258" y1="115" x2="296" y2="115" stroke="#e67e22" stroke-width="2.5"/>
+  <polygon points="296,110 306,115 296,120" fill="#e67e22"/>
+  <text x="282" y="108" text-anchor="middle" font-family="monospace" font-size="8" fill="#e67e22">measure</text>
+
+  <!-- Reconstructed image (right) -->
+  <text x="345" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Reconstructed</text>
+  <g transform="translate(308, 50)">
+    <rect x="0"  y="0"  width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="14" y="0"  width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="28" y="0"  width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="0"  y="14" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="14" y="14" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="28" y="14" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="0"  y="28" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="14" y="28" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="28" y="28" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="0"  y="42" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="14" y="42" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="28" y="42" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="0"  y="56" width="14" height="14" fill="#1a1a2e" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="14" y="56" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="28" y="56" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="0"  y="70" width="14" height="14" fill="#6a7fae" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="14" y="70" width="14" height="14" fill="#fff"    stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+    <rect x="28" y="70" width="14" height="14" fill="#4E567E" stroke="#eee" stroke-width="0.5" opacity="0.9"/>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="200" y="196" text-anchor="middle" font-family="monospace" font-size="10" fill="#555">Amplitude &amp; Basis Encoding · NERSC AY2025 Director Reserve Award</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#f0f4ff"/>
+
+  <!-- Title label -->
+  <text x="200" y="22" text-anchor="middle" font-family="monospace" font-size="11" fill="#4E567E" font-weight="bold">Quantum Circuit Simulation on HPC</text>
+
+  <!-- Qubit wires -->
+  <line x1="40" y1="55"  x2="370" y2="55"  stroke="#333" stroke-width="1.5"/>
+  <line x1="40" y1="95"  x2="370" y2="95"  stroke="#333" stroke-width="1.5"/>
+  <line x1="40" y1="135" x2="370" y2="135" stroke="#333" stroke-width="1.5"/>
+  <line x1="40" y1="175" x2="370" y2="175" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Qubit labels -->
+  <text x="12" y="59"  font-family="monospace" font-size="11" fill="#333">q₀</text>
+  <text x="12" y="99"  font-family="monospace" font-size="11" fill="#333">q₁</text>
+  <text x="12" y="139" font-family="monospace" font-size="11" fill="#333">q₂</text>
+  <text x="12" y="179" font-family="monospace" font-size="11" fill="#333">q₃</text>
+
+  <!-- H gates (Hadamard) -->
+  <rect x="50" y="44" width="24" height="22" rx="3" fill="#4E567E"/>
+  <text x="62" y="59" text-anchor="middle" font-family="monospace" font-size="11" fill="white" font-weight="bold">H</text>
+
+  <rect x="50" y="84" width="24" height="22" rx="3" fill="#4E567E"/>
+  <text x="62" y="99" text-anchor="middle" font-family="monospace" font-size="11" fill="white" font-weight="bold">H</text>
+
+  <rect x="50" y="124" width="24" height="22" rx="3" fill="#4E567E"/>
+  <text x="62" y="139" text-anchor="middle" font-family="monospace" font-size="11" fill="white" font-weight="bold">H</text>
+
+  <rect x="50" y="164" width="24" height="22" rx="3" fill="#4E567E"/>
+  <text x="62" y="179" text-anchor="middle" font-family="monospace" font-size="11" fill="white" font-weight="bold">H</text>
+
+  <!-- CNOT between q0-q1 -->
+  <circle cx="110" cy="55"  r="5"  fill="#e74c3c"/>
+  <circle cx="110" cy="95"  r="9"  fill="none" stroke="#e74c3c" stroke-width="2"/>
+  <line   x1="110" y1="55"  x2="110" y2="95"  stroke="#e74c3c" stroke-width="2"/>
+  <line   x1="101" y1="95"  x2="119" y2="95"  stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- CNOT between q2-q3 -->
+  <circle cx="110" cy="135" r="5"  fill="#e74c3c"/>
+  <circle cx="110" cy="175" r="9"  fill="none" stroke="#e74c3c" stroke-width="2"/>
+  <line   x1="110" y1="135" x2="110" y2="175" stroke="#e74c3c" stroke-width="2"/>
+  <line   x1="101" y1="175" x2="119" y2="175" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- RZ gates -->
+  <rect x="140" y="44" width="28" height="22" rx="3" fill="#27ae60"/>
+  <text x="154" y="59" text-anchor="middle" font-family="monospace" font-size="10" fill="white" font-weight="bold">Rz</text>
+
+  <rect x="140" y="84" width="28" height="22" rx="3" fill="#27ae60"/>
+  <text x="154" y="99" text-anchor="middle" font-family="monospace" font-size="10" fill="white" font-weight="bold">Rz</text>
+
+  <rect x="140" y="124" width="28" height="22" rx="3" fill="#27ae60"/>
+  <text x="154" y="139" text-anchor="middle" font-family="monospace" font-size="10" fill="white" font-weight="bold">Rz</text>
+
+  <rect x="140" y="164" width="28" height="22" rx="3" fill="#27ae60"/>
+  <text x="154" y="179" text-anchor="middle" font-family="monospace" font-size="10" fill="white" font-weight="bold">Rz</text>
+
+  <!-- CNOT cross-layer q1-q2 -->
+  <circle cx="200" cy="95"  r="5"  fill="#8e44ad"/>
+  <circle cx="200" cy="135" r="9"  fill="none" stroke="#8e44ad" stroke-width="2"/>
+  <line   x1="200" y1="95"  x2="200" y2="135" stroke="#8e44ad" stroke-width="2"/>
+  <line   x1="191" y1="135" x2="209" y2="135" stroke="#8e44ad" stroke-width="2"/>
+
+  <!-- More RZ gates -->
+  <rect x="225" y="44"  width="28" height="22" rx="3" fill="#27ae60"/>
+  <text x="239" y="59"  text-anchor="middle" font-family="monospace" font-size="10" fill="white" font-weight="bold">Rz</text>
+
+  <rect x="225" y="124" width="28" height="22" rx="3" fill="#27ae60"/>
+  <text x="239" y="139" text-anchor="middle" font-family="monospace" font-size="10" fill="white" font-weight="bold">Rz</text>
+
+  <!-- CNOT final q0-q1 -->
+  <circle cx="275" cy="55"  r="5"  fill="#e74c3c"/>
+  <circle cx="275" cy="95"  r="9"  fill="none" stroke="#e74c3c" stroke-width="2"/>
+  <line   x1="275" y1="55"  x2="275" y2="95"  stroke="#e74c3c" stroke-width="2"/>
+  <line   x1="266" y1="95"  x2="284" y2="95"  stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Measure gates -->
+  <rect x="315" y="44"  width="30" height="22" rx="3" fill="#95a5a6"/>
+  <text x="330" y="58"  text-anchor="middle" font-family="monospace" font-size="9" fill="white">M</text>
+
+  <rect x="315" y="84"  width="30" height="22" rx="3" fill="#95a5a6"/>
+  <text x="330" y="98"  text-anchor="middle" font-family="monospace" font-size="9" fill="white">M</text>
+
+  <rect x="315" y="124" width="30" height="22" rx="3" fill="#95a5a6"/>
+  <text x="330" y="138" text-anchor="middle" font-family="monospace" font-size="9" fill="white">M</text>
+
+  <rect x="315" y="164" width="30" height="22" rx="3" fill="#95a5a6"/>
+  <text x="330" y="178" text-anchor="middle" font-family="monospace" font-size="9" fill="white">M</text>
+
+  <!-- HPC label at bottom -->
+  <text x="200" y="208" text-anchor="middle" font-family="monospace" font-size="10" fill="#666">Distributed HPC Simulation · arXiv:2504.03967</text>
+</svg>
