@@ -12,19 +12,35 @@ const Header = () => {
       style={{
         position: "fixed",
         display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        background: "rgba(255,255,255,0.75)",
-        padding: "1rem",
+        justifyContent: "space-between",
+        alignItems: "center",
+        background: "rgba(255,255,255,0.95)",
+        backdropFilter: "blur(8px)",
+        borderBottom: "1px solid #e8e8e8",
+        padding: "0.9rem 2.5rem",
         top: 0,
         width: "100%",
+        boxSizing: "border-box",
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <a
+        href="#home"
+        style={{
+          fontWeight: 700,
+          fontSize: "1.1rem",
+          letterSpacing: "0.02em",
+          color: "#1a1a2e",
+        }}
+      >
+        Ziqing Guo
+      </a>
+      <nav style={{ display: "flex", gap: "2rem" }}>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#footer">Contact</a>
+      </nav>
     </div>
   );
 };
