@@ -8,7 +8,7 @@
 html,
 body {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 27px;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -302,16 +302,30 @@ div nav a:hover {
 }
 
 .pub-authors {
-  font-size: 13px;
+  font-size: 20px;
   color: #555;
   margin-top: 0.2rem;
 }
 
 .pub-venue {
-  font-size: 13px;
+  font-size: 20px;
   color: #4E567E;
   font-style: italic;
   margin-top: 0.1rem;
+}
+
+.pub-figure-link {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+.pub-figure {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #e8e8ee;
+  display: block;
 }
 
 /* ── Project Grid ── */
