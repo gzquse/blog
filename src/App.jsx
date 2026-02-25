@@ -1,14 +1,4 @@
 /**
- * This object represents your information. The project is set so that you
- * only need to update these here, and values are passed as properties to the
- * components that need that information.
- *
- * Update the values below with your information.
- *
- * If you don't have one of the social sites listed, leave it as an empty string.
- */
-
-/**
  * Application component
  *
  * To contain application wide settings, routes, state, etc.
@@ -21,17 +11,10 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import Research from "./Components/Research";
 
 import "./styles.css";
-/**
- * This object represents your information. The project is set so that you
- * only need to update these here, and values are passed as properties to the
- * components that need that information.
- *
- * Update the values below with your information.
- *
- * If you don't have one of the social sites listed, leave it as an empty string.
- */
+
 const siteProps = {
   name: "Ziqing Guo",
   title: "PhD student at Texas Tech University",
@@ -43,7 +26,7 @@ const siteProps = {
   twitter: "Martinetin_",
   youTube: "",
 };
-const primaryColor = "#4E567E";
+const primaryColor = "#1a1a2e";
 const secondaryColor = "#D2F1E4";
 
 const App = () => {
@@ -52,6 +35,7 @@ const App = () => {
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
+      <Research />
       <Portfolio />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>

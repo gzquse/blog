@@ -1,76 +1,107 @@
 /**
  * About component
  *
- * Space for you to describe more about yourself.
+ * Education and experience section.
  */
 
 import React from "react";
 
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
-import image from "../images/background.png";
+const education = [
+  {
+    degree: "Ph.D. in Computer Science",
+    institution: "Texas Tech University",
+    period: "2023 – Present",
+    detail: "Advisor: Prof. Ziwen Pan · Research: Quantum Computing & Quantum Cryptography",
+  },
+  {
+    degree: "B.S. in Computer Science & Mathematics",
+    institution: "Texas Tech University",
+    period: "2019 – 2023",
+    detail: "Graduated with honors",
+  },
+];
 
-const imageAltText = "purple and blue abstract background";
-
-/**
- * Sort description that expands on your title on the Home component.
- */
-const description =
-  "I am currently the research fellow of department of Computer Science at Texas Tech University in Professor Ziwen Pan's group. My research interests include quantum computing and quantum cryptography. Previously, I worked with Jan Balewski at Lawrance National Berkeley Lab on quantum image encoding experiments, and Pro. Katherine James at Newcastle University in the field of Biomedical Large Language Model. I received NERSC AY 2025 Director Reserve Allocation Award. Outside of research and academics, I am a huge fan of table tennis, guitar, and love to travel.";
-
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
-const skillsList = ["HPC", "Physics", "Mathematica", "Quantum"];
-
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
-const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my CS/Math experience I continually look for new and better ways to make highly condensed research accessible by all.";
+const experience = [
+  {
+    role: "Graduate Research Assistant",
+    org: "Texas Tech University – Pan Quantum Lab",
+    period: "2023 – Present",
+    detail:
+      "Developing quantum algorithms for NISQ devices, circuit knitting techniques, and QUBO/QAOA formulations.",
+  },
+  {
+    role: "Research Intern",
+    org: "Lawrence Berkeley National Laboratory (NERSC)",
+    period: "2022 – 2023",
+    detail:
+      "Worked with Jan Balewski on quantum image encoding experiments. Awarded NERSC AY 2025 Director Reserve Allocation.",
+  },
+  {
+    role: "Research Collaborator",
+    org: "Newcastle University",
+    period: "2022",
+    detail:
+      "Collaborated with Prof. Katherine James on Biomedical Large Language Model research.",
+  },
+];
 
 const About = () => {
   return (
-    <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+    <section className="section-white" id="about">
+      <div className="section-container">
+        <div className="about-grid">
+          {/* Education */}
+          <div>
+            <h2 className="section-heading">Education</h2>
+            <div className="timeline">
+              {education.map((item, idx) => (
+                <div className="timeline-item" key={idx}>
+                  <div className="timeline-dot" />
+                  <div className="timeline-content">
+                    <h3 style={{ margin: 0, fontSize: "1rem", fontWeight: 600 }}>
+                      {item.degree}
+                    </h3>
+                    <p className="small" style={{ margin: "0.15rem 0", color: "#4E567E", fontWeight: 500 }}>
+                      {item.institution}
+                    </p>
+                    <p className="small" style={{ margin: 0, color: "#888" }}>
+                      {item.period}
+                    </p>
+                    <p className="small" style={{ marginTop: "0.3rem" }}>
+                      {item.detail}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Experience */}
+          <div>
+            <h2 className="section-heading">Experience</h2>
+            <div className="timeline">
+              {experience.map((item, idx) => (
+                <div className="timeline-item" key={idx}>
+                  <div className="timeline-dot" />
+                  <div className="timeline-content">
+                    <h3 style={{ margin: 0, fontSize: "1rem", fontWeight: 600 }}>
+                      {item.role}
+                    </h3>
+                    <p className="small" style={{ margin: "0.15rem 0", color: "#4E567E", fontWeight: 500 }}>
+                      {item.org}
+                    </p>
+                    <p className="small" style={{ margin: 0, color: "#888" }}>
+                      {item.period}
+                    </p>
+                    <p className="small" style={{ marginTop: "0.3rem" }}>
+                      {item.detail}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
