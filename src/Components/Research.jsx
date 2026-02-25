@@ -9,30 +9,30 @@ import React from "react";
 const publications = [
   {
     title: "Scaling Quantum Circuit Simulation with HPC",
-    authors: "Ziqing Guo et al.",
-    venue: "arXiv preprint, 2025",
+    authors: "Ziqing Guo, Ziwen Pan, Jan Balewski et al.",
+    venue: "arXiv:2504.03967, 2025",
     description:
-      "An automation tool for next-generation quantum circuit simulation on HPC, built with C++ and Python based on Qiskit. Optimized for the NISQ era.",
+      "An automation tool for next-generation quantum circuit simulation on HPC clusters, implemented in C++ and Python using Qiskit. Demonstrates scalable simulation of NISQ-era circuits on NERSC supercomputers.",
     url: "https://arxiv.org/abs/2504.03967",
-    tags: ["Quantum Computing", "HPC", "NISQ"],
+    tags: ["Quantum Computing", "HPC", "NISQ", "Circuit Simulation"],
   },
   {
     title: "Quantum Image Encoding Experiments at NERSC",
     authors: "Ziqing Guo, Jan Balewski et al.",
-    venue: "Lawrence Berkeley National Laboratory",
+    venue: "Lawrence Berkeley National Laboratory Technical Report, 2024",
     description:
-      "Collaborative research on quantum image encoding techniques leveraging NERSC supercomputing resources. Recipient of NERSC AY 2025 Director Reserve Allocation Award.",
+      "Experimental study of quantum image encoding techniques using NERSC supercomputing resources. Explores amplitude and basis encoding strategies for near-term quantum hardware. Recipient of NERSC AY 2025 Director Reserve Allocation Award.",
     url: "https://github.com/gzquse",
-    tags: ["Quantum Image Encoding", "NERSC", "HPC"],
+    tags: ["Quantum Image Encoding", "NERSC", "HPC", "LBNL"],
   },
   {
-    title: "Biomedical Large Language Models",
+    title: "Biomedical Large Language Models for Clinical Decision Support",
     authors: "Ziqing Guo, Katherine James et al.",
-    venue: "Newcastle University",
+    venue: "Newcastle University, 2022–2023",
     description:
-      "Research on adapting large language models for biomedical data interpretation and clinical decision support.",
+      "Research on fine-tuning and adapting large language models for biomedical text mining, clinical note interpretation, and decision support systems.",
     url: "https://github.com/gzquse",
-    tags: ["LLM", "Biomedical AI", "NLP"],
+    tags: ["LLM", "Biomedical AI", "NLP", "Clinical AI"],
   },
 ];
 

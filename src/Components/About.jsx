@@ -14,10 +14,16 @@ const education = [
     detail: "Advisor: Prof. Ziwen Pan · Research: Quantum Computing & Quantum Cryptography",
   },
   {
-    degree: "B.S. in Computer Science & Mathematics",
-    institution: "Texas Tech University",
-    period: "2019 – 2023",
-    detail: "Graduated with honors",
+    degree: "MSc in Advanced Computer Science",
+    institution: "Newcastle University",
+    period: "2022 – 2023",
+    detail: "Advanced study in computer science with focus on AI and large language models",
+  },
+  {
+    degree: "B.Eng in Network Engineering",
+    institution: "University of Tennessee & Chengdu University of Information and Technology",
+    period: "2017 – 2021",
+    detail: "Dual-university bachelor's program in network engineering",
   },
 ];
 
@@ -30,18 +36,18 @@ const experience = [
       "Developing quantum algorithms for NISQ devices, circuit knitting techniques, and QUBO/QAOA formulations.",
   },
   {
-    role: "Research Intern",
-    org: "Lawrence Berkeley National Laboratory (NERSC)",
-    period: "2022 – 2023",
+    role: "Research Affiliate",
+    org: "Lawrence Berkeley National Laboratory (LBNL)",
+    period: "2024 – Present",
     detail:
-      "Worked with Jan Balewski on quantum image encoding experiments. Awarded NERSC AY 2025 Director Reserve Allocation.",
+      "Research affiliate working on quantum computing and HPC simulations. Awarded NERSC AY 2025 Director Reserve Allocation.",
   },
   {
-    role: "Research Collaborator",
+    role: "Research Assistant",
     org: "Newcastle University",
-    period: "2022",
+    period: "2022 – 2023",
     detail:
-      "Collaborated with Prof. Katherine James on Biomedical Large Language Model research.",
+      "Worked as Research Assistant with Prof. Katherine James on Biomedical Large Language Model research.",
   },
 ];
 
