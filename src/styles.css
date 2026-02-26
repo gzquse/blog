@@ -86,7 +86,7 @@ div nav a:hover {
 }
 
 .section-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -111,7 +111,7 @@ div nav a:hover {
 }
 
 .hero-container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem;
   display: flex;

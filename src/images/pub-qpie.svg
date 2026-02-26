@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#f0f4ff"/>
+
+  <!-- Title -->
+  <text x="200" y="20" text-anchor="middle" font-family="monospace" font-size="11" fill="#2c3e8c" font-weight="bold">QPIE Hybrid Network · Transfer Learning</text>
+
+  <!-- Quantum encoder (left) -->
+  <text x="65" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Quantum Encoder</text>
+  <g transform="translate(10, 50)">
+    <rect x="0" y="0" width="110" height="80" rx="6" fill="#eaf0fb" stroke="#4E567E" stroke-width="1.5"/>
+    <!-- Qubit wires -->
+    <line x1="10" y1="20" x2="100" y2="20" stroke="#4E567E" stroke-width="1"/>
+    <line x1="10" y1="40" x2="100" y2="40" stroke="#4E567E" stroke-width="1"/>
+    <line x1="10" y1="60" x2="100" y2="60" stroke="#4E567E" stroke-width="1"/>
+    <!-- Gates -->
+    <rect x="20" y="12" width="16" height="16" rx="2" fill="#4E567E"/>
+    <text x="28" y="23" text-anchor="middle" font-family="monospace" font-size="7" fill="white">H</text>
+    <rect x="20" y="32" width="16" height="16" rx="2" fill="#4E567E"/>
+    <text x="28" y="43" text-anchor="middle" font-family="monospace" font-size="7" fill="white">H</text>
+    <rect x="20" y="52" width="16" height="16" rx="2" fill="#4E567E"/>
+    <text x="28" y="63" text-anchor="middle" font-family="monospace" font-size="7" fill="white">H</text>
+    <!-- CNOT connections -->
+    <circle cx="50" cy="20" r="3" fill="#e74c3c"/>
+    <circle cx="50" cy="40" r="5" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+    <line x1="50" y1="20" x2="50" y2="40" stroke="#e74c3c" stroke-width="1.5"/>
+    <!-- Rotation gates -->
+    <rect x="65" y="12" width="16" height="16" rx="2" fill="#27ae60"/>
+    <text x="73" y="23" text-anchor="middle" font-family="monospace" font-size="6" fill="white">Rx</text>
+    <rect x="65" y="32" width="16" height="16" rx="2" fill="#27ae60"/>
+    <text x="73" y="43" text-anchor="middle" font-family="monospace" font-size="6" fill="white">Ry</text>
+    <rect x="65" y="52" width="16" height="16" rx="2" fill="#27ae60"/>
+    <text x="73" y="63" text-anchor="middle" font-family="monospace" font-size="6" fill="white">Rz</text>
+    <!-- Measure -->
+    <rect x="87" y="12" width="12" height="16" rx="2" fill="#95a5a6"/>
+    <text x="93" y="22" text-anchor="middle" font-family="monospace" font-size="6" fill="white">M</text>
+    <rect x="87" y="32" width="12" height="16" rx="2" fill="#95a5a6"/>
+    <text x="93" y="42" text-anchor="middle" font-family="monospace" font-size="6" fill="white">M</text>
+    <rect x="87" y="52" width="12" height="16" rx="2" fill="#95a5a6"/>
+    <text x="93" y="62" text-anchor="middle" font-family="monospace" font-size="6" fill="white">M</text>
+  </g>
+
+  <!-- Arrow with QPIE label -->
+  <line x1="125" y1="92" x2="155" y2="92" stroke="#2c3e8c" stroke-width="2"/>
+  <polygon points="155,88 163,92 155,96" fill="#2c3e8c"/>
+  <text x="143" y="82" text-anchor="middle" font-family="monospace" font-size="7" fill="#2c3e8c">QPIE</text>
+
+  <!-- Classical network (middle) -->
+  <text x="230" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Hybrid Classical-Quantum</text>
+  <g transform="translate(165, 52)">
+    <rect x="0" y="0" width="130" height="90" rx="6" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+    <!-- Neural network nodes -->
+    <!-- Input layer -->
+    <circle cx="25" cy="20" r="6" fill="#4E567E"/>
+    <circle cx="25" cy="40" r="6" fill="#4E567E"/>
+    <circle cx="25" cy="60" r="6" fill="#4E567E"/>
+    <!-- Hidden layer -->
+    <circle cx="65" cy="15" r="6" fill="#e67e22"/>
+    <circle cx="65" cy="35" r="6" fill="#e67e22"/>
+    <circle cx="65" cy="55" r="6" fill="#e67e22"/>
+    <circle cx="65" cy="75" r="6" fill="#e67e22"/>
+    <!-- Output layer -->
+    <circle cx="105" cy="30" r="6" fill="#27ae60"/>
+    <circle cx="105" cy="55" r="6" fill="#27ae60"/>
+    <!-- Connections input-hidden -->
+    <line x1="31" y1="20" x2="59" y2="15" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="31" y1="20" x2="59" y2="35" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="31" y1="40" x2="59" y2="35" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="31" y1="40" x2="59" y2="55" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="31" y1="60" x2="59" y2="55" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="31" y1="60" x2="59" y2="75" stroke="#ccc" stroke-width="0.8"/>
+    <!-- Connections hidden-output -->
+    <line x1="71" y1="15" x2="99" y2="30" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="71" y1="35" x2="99" y2="30" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="71" y1="55" x2="99" y2="55" stroke="#ccc" stroke-width="0.8"/>
+    <line x1="71" y1="75" x2="99" y2="55" stroke="#ccc" stroke-width="0.8"/>
+    <text x="65" y="88" text-anchor="middle" font-family="monospace" font-size="7" fill="#e67e22">Transfer Learning</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="300" y1="92" x2="318" y2="92" stroke="#27ae60" stroke-width="2"/>
+  <polygon points="318,88 326,92 318,96" fill="#27ae60"/>
+
+  <!-- Result (right) -->
+  <text x="360" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Output</text>
+  <g transform="translate(325, 52)">
+    <rect x="0" y="0" width="70" height="80" rx="5" fill="#fff" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="35" y="18" text-anchor="middle" font-family="monospace" font-size="7" fill="#27ae60" font-weight="bold">Information</text>
+    <text x="35" y="28" text-anchor="middle" font-family="monospace" font-size="7" fill="#27ae60" font-weight="bold">Exchange</text>
+    <!-- Signal bars -->
+    <rect x="12" y="60" width="8" height="10" rx="1" fill="#27ae60" opacity="0.5"/>
+    <rect x="24" y="50" width="8" height="20" rx="1" fill="#27ae60" opacity="0.6"/>
+    <rect x="36" y="40" width="8" height="30" rx="1" fill="#27ae60" opacity="0.7"/>
+    <rect x="48" y="35" width="8" height="35" rx="1" fill="#27ae60" opacity="0.9"/>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="200" y="196" text-anchor="middle" font-family="monospace" font-size="10" fill="#555">Quantum Science and Technology 10 (3), 035054</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
+  <rect width="400" height="220" fill="#f4f0ff"/>
+
+  <!-- Title -->
+  <text x="200" y="20" text-anchor="middle" font-family="monospace" font-size="11" fill="#6c3483" font-weight="bold">DEAL with ZNE · Superconducting Qubits</text>
+
+  <!-- Noisy circuit (left) -->
+  <text x="80" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Noisy Circuit</text>
+  <g transform="translate(20, 50)">
+    <!-- Qubit wires -->
+    <line x1="0" y1="15" x2="120" y2="15" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="0" y1="40" x2="120" y2="40" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+    <line x1="0" y1="65" x2="120" y2="65" stroke="#999" stroke-width="1" stroke-dasharray="4,2"/>
+    <!-- Gates -->
+    <rect x="15" y="5" width="20" height="20" rx="3" fill="#8e44ad" opacity="0.8"/>
+    <text x="25" y="19" text-anchor="middle" font-family="monospace" font-size="9" fill="white">Ry</text>
+    <rect x="15" y="30" width="20" height="20" rx="3" fill="#8e44ad" opacity="0.8"/>
+    <text x="25" y="44" text-anchor="middle" font-family="monospace" font-size="9" fill="white">Ry</text>
+    <rect x="15" y="55" width="20" height="20" rx="3" fill="#8e44ad" opacity="0.8"/>
+    <text x="25" y="69" text-anchor="middle" font-family="monospace" font-size="9" fill="white">Ry</text>
+    <!-- CNOT -->
+    <circle cx="55" cy="15" r="4" fill="#e74c3c"/>
+    <circle cx="55" cy="40" r="7" fill="none" stroke="#e74c3c" stroke-width="1.5"/>
+    <line x1="55" y1="15" x2="55" y2="40" stroke="#e74c3c" stroke-width="1.5"/>
+    <!-- Noise markers -->
+    <text x="80" y="18" font-family="monospace" font-size="10" fill="#e74c3c">⚡</text>
+    <text x="80" y="43" font-family="monospace" font-size="10" fill="#e74c3c">⚡</text>
+    <text x="80" y="68" font-family="monospace" font-size="10" fill="#e74c3c">⚡</text>
+    <!-- Measure -->
+    <rect x="95" y="5" width="20" height="20" rx="3" fill="#95a5a6"/>
+    <text x="105" y="18" text-anchor="middle" font-family="monospace" font-size="8" fill="white">M</text>
+    <rect x="95" y="30" width="20" height="20" rx="3" fill="#95a5a6"/>
+    <text x="105" y="43" text-anchor="middle" font-family="monospace" font-size="8" fill="white">M</text>
+    <rect x="95" y="55" width="20" height="20" rx="3" fill="#95a5a6"/>
+    <text x="105" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="white">M</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <line x1="148" y1="100" x2="168" y2="100" stroke="#6c3483" stroke-width="2"/>
+  <polygon points="168,96 176,100 168,104" fill="#6c3483"/>
+  <text x="162" y="92" text-anchor="middle" font-family="monospace" font-size="7" fill="#6c3483">ZNE</text>
+
+  <!-- ZNE Extrapolation (middle) -->
+  <text x="230" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Zero-Noise Extrapolation</text>
+  <g transform="translate(178, 52)">
+    <!-- Axes -->
+    <line x1="10" y1="90" x2="100" y2="90" stroke="#333" stroke-width="1.5"/>
+    <line x1="10" y1="90" x2="10" y2="10" stroke="#333" stroke-width="1.5"/>
+    <text x="55" y="105" text-anchor="middle" font-family="monospace" font-size="7" fill="#555">noise scale λ</text>
+    <text x="6" y="8" text-anchor="middle" font-family="monospace" font-size="7" fill="#555">E</text>
+    <!-- Data points with increasing noise -->
+    <circle cx="25" cy="35" r="4" fill="#6c3483"/>
+    <circle cx="45" cy="50" r="4" fill="#6c3483"/>
+    <circle cx="65" cy="65" r="4" fill="#6c3483"/>
+    <!-- Extrapolation line -->
+    <line x1="10" y1="22" x2="85" y2="80" stroke="#6c3483" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <!-- Zero-noise point -->
+    <circle cx="10" cy="22" r="5" fill="#27ae60" stroke="#27ae60" stroke-width="2"/>
+    <text x="22" y="18" font-family="monospace" font-size="7" fill="#27ae60" font-weight="bold">λ→0</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <line x1="286" y1="100" x2="306" y2="100" stroke="#6c3483" stroke-width="2"/>
+  <polygon points="306,96 314,100 306,104" fill="#6c3483"/>
+  <text x="300" y="92" text-anchor="middle" font-family="monospace" font-size="7" fill="#6c3483">DEAL</text>
+
+  <!-- DEAL Ansatz (right) -->
+  <text x="355" y="42" text-anchor="middle" font-family="monospace" font-size="9" fill="#333">Mitigated Result</text>
+  <g transform="translate(315, 52)">
+    <rect x="0" y="0" width="80" height="90" rx="5" fill="#fff" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="40" y="18" text-anchor="middle" font-family="monospace" font-size="8" fill="#27ae60" font-weight="bold">Entanglement</text>
+    <text x="40" y="28" text-anchor="middle" font-family="monospace" font-size="8" fill="#27ae60" font-weight="bold">Ansatz</text>
+    <!-- Bar chart for fidelity -->
+    <rect x="10" y="38" width="12" height="40" rx="2" fill="#27ae60" opacity="0.3"/>
+    <rect x="10" y="46" width="12" height="32" rx="2" fill="#27ae60" opacity="0.7"/>
+    <rect x="28" y="38" width="12" height="40" rx="2" fill="#27ae60" opacity="0.3"/>
+    <rect x="28" y="42" width="12" height="36" rx="2" fill="#27ae60" opacity="0.7"/>
+    <rect x="46" y="38" width="12" height="40" rx="2" fill="#27ae60" opacity="0.3"/>
+    <rect x="46" y="40" width="12" height="38" rx="2" fill="#27ae60" opacity="0.7"/>
+    <rect x="64" y="38" width="12" height="40" rx="2" fill="#27ae60" opacity="0.3"/>
+    <rect x="64" y="44" width="12" height="34" rx="2" fill="#27ae60" opacity="0.7"/>
+    <text x="40" y="86" text-anchor="middle" font-family="monospace" font-size="7" fill="#555">high fidelity</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="200" y="196" text-anchor="middle" font-family="monospace" font-size="10" fill="#555">IEEE QCE 2025 · Error Mitigation on NISQ Hardware</text>
+</svg>

@@ -5,44 +5,64 @@
  */
 
 import React from "react";
+import pubDealZne from "../images/pub-deal-zne.svg";
 import pubQuantumCircuit from "../images/pub-quantum-circuit.svg";
 import pubQuantumEncoding from "../images/pub-quantum-encoding.svg";
-import pubBiomedicalLlm from "../images/pub-biomedical-llm.svg";
+import pubQpie from "../images/pub-qpie.svg";
 
+/**
+ * Publication images are hand-crafted SVG illustrations that visually
+ * summarize each paper's core idea. They are not generated from data;
+ * instead they were designed as schematic diagrams using standard SVG
+ * markup (see src/images/pub-*.svg).
+ */
 const publications = [
   {
-    title: "Scaling Quantum Circuit Simulation with HPC",
-    authors: "Ziqing Guo, Ziwen Pan, Jan Balewski et al.",
-    venue: "arXiv:2504.03967, 2025",
+    title:
+      "Direct Entanglement Ansatz Learning (DEAL) with ZNE on Error-Prone Superconducting Qubits",
+    authors: "Z. Guo, Z. Pan et al.",
+    venue: "2025 IEEE International Conference on Quantum Computing and Engineering (QCE)",
+    description:
+      "Proposes DEAL, a direct entanglement ansatz learning method combined with zero-noise extrapolation (ZNE) for error mitigation on noisy superconducting quantum processors.",
+    url: "https://github.com/gzquse",
+    tags: ["Quantum Computing", "Error Mitigation", "ZNE", "IEEE QCE"],
+    image: pubDealZne,
+    imageAlt:
+      "Noisy quantum circuit processed through ZNE extrapolation to produce mitigated high-fidelity results",
+  },
+  {
+    title: "Q-GEAR: Improving Quantum Simulation Framework",
+    authors: "Z. Guo, Z. Pan, J. Balewski et al.",
+    venue: "ACM, 2025",
     description:
       "An automation tool for next-generation quantum circuit simulation on HPC clusters, implemented in C++ and Python using Qiskit. Demonstrates scalable simulation of NISQ-era circuits on NERSC supercomputers.",
-    url: "https://arxiv.org/abs/2504.03967",
+    url: "https://dl.acm.org/doi/pdf/10.1145/3754598.3754608",
     tags: ["Quantum Computing", "HPC", "NISQ", "Circuit Simulation"],
     image: pubQuantumCircuit,
     imageAlt: "Quantum circuit diagram with H, CNOT and Rz gates across 4 qubits simulated on HPC",
   },
   {
-    title: "Quantum Image Encoding Experiments at NERSC",
-    authors: "Ziqing Guo, Jan Balewski et al.",
-    venue: "Lawrence Berkeley National Laboratory Technical Report, 2024",
+    title: "Vectorized Attention with Learnable Encoding for Quantum Transformer",
+    authors: "Z. Guo, Z. Pan, A. Khan, J. Balewski",
+    venue: "Proceedings of the AAAI Symposium Series 7",
     description:
-      "Experimental study of quantum image encoding techniques using NERSC supercomputing resources. Explores amplitude and basis encoding strategies for near-term quantum hardware. Recipient of NERSC AY 2025 Director Reserve Allocation Award.",
+      "Introduces vectorized attention mechanisms with learnable encoding strategies for quantum transformers, bridging classical attention architectures and quantum circuit design.",
     url: "https://github.com/gzquse",
-    tags: ["Quantum Image Encoding", "NERSC", "HPC", "LBNL"],
+    tags: ["Quantum Transformer", "Attention", "AAAI", "Encoding"],
     image: pubQuantumEncoding,
     imageAlt: "Classical pixel grid encoded into quantum amplitude states and reconstructed",
   },
   {
-    title: "Biomedical Large Language Models for Clinical Decision Support",
-    authors: "Ziqing Guo, Katherine James et al.",
-    venue: "Newcastle University, 2022–2023",
+    title: "Quantum Parallel Information Exchange (QPIE) Hybrid Network with Transfer Learning",
+    authors: "Z. Guo et al.",
+    venue: "Quantum Science and Technology 10 (3), 035054",
     description:
-      "Research on fine-tuning and adapting large language models for biomedical text mining, clinical note interpretation, and decision support systems.",
+      "Presents the QPIE hybrid quantum-classical network that leverages transfer learning for efficient quantum information exchange across hybrid architectures.",
     url: "https://github.com/gzquse",
-    tags: ["LLM", "Biomedical AI", "NLP", "Clinical AI"],
-    image: pubBiomedicalLlm,
+    tags: ["QPIE", "Transfer Learning", "Hybrid Network", "QST"],
+    image: pubQpie,
     imageAlt:
-      "Pipeline from clinical notes through a fine-tuned BioLLM to clinical decision outputs",
+      "Quantum encoder feeding into a hybrid classical-quantum network with transfer learning",
   },
 ];
 
