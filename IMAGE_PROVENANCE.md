@@ -3,9 +3,10 @@
 ## Publication Figures
 
 The SVG illustrations used in the Research & Publications section are
-**hand-crafted schematic diagrams** that visually summarize each paper's core
-idea. They are **not** auto-generated from experimental data or plotting
-libraries.
+**schematic diagrams** that visually summarize each paper's core idea. They
+were generated with the help of **GitHub Copilot** (Claude model) and then
+committed as static `.svg` files. They are **not** auto-generated from
+experimental data or plotting libraries.
 
 Each file lives under `src/images/` and uses standard SVG markup:
 
@@ -18,18 +19,43 @@ Each file lives under `src/images/` and uses standard SVG markup:
 
 ### How images are generated
 
-Each SVG is written by hand in a plain text editor using standard SVG elements
-(`<rect>`, `<circle>`, `<line>`, `<text>`, etc.). No external design tool,
-plotting library, or code generator is required. The general workflow is:
+The SVGs were produced by prompting **GitHub Copilot** (backed by the
+**Claude** model) to generate inline SVG markup. No external design tool or
+plotting library is needed. The general workflow is:
 
-1. **Sketch the layout** — decide which elements of the paper to highlight
-   (e.g., circuit gates, data-flow arrows, architecture blocks).
-2. **Write SVG markup** — open a new `.svg` file in `src/images/` and build the
-   diagram with SVG primitives. Use the existing `pub-*.svg` files as
-   templates for consistent sizing (`viewBox="0 0 400 220"`), colour palette,
-   and font choices (`font-family="monospace"`).
-3. **Preview** — open the file directly in a browser
-   (`open src/images/pub-<name>.svg`) to iterate on coordinates and styling.
+1. **Describe the diagram** — provide the LLM with the paper title, core idea,
+   and what elements to visualise (e.g. circuit gates, data-flow arrows,
+   architecture blocks).
+2. **Prompt for SVG output** — ask the model to produce a self-contained `.svg`
+   file using basic SVG primitives (`<rect>`, `<circle>`, `<line>`, `<text>`,
+   etc.).
+3. **Preview & iterate** — open the generated file in a browser
+   (`open src/images/pub-<name>.svg`) and refine coordinates, colours, or
+   labels by prompting again or editing manually.
+
+#### Example prompt
+
+Below is a representative prompt you can use with any Claude-based (or
+similar) LLM to reproduce figures in the same style:
+
+```
+Create a self-contained SVG file (no external dependencies) that
+illustrates the core idea of the paper "<PAPER TITLE>".
+
+Constraints:
+- viewBox="0 0 400 220", width 400, height 220
+- Use monospace font for all text
+- Use only basic SVG elements: rect, circle, line, text, polygon, g
+- Colour palette: backgrounds #f0f4ff / #f4f0ff / #f0f8f4,
+  gate fills #4E567E (blue-grey), #27ae60 (green), #e74c3c (red),
+  #8e44ad (purple), #e67e22 (orange), measure #95a5a6
+- Include a bold title at the top and a one-line caption at the bottom
+- Show the paper's pipeline from left to right with labelled arrows
+
+The diagram should be a schematic summary, not a data plot.
+```
+
+Adjust the paper title, pipeline stages, and colour accents as needed.
 
 ### Reproducing or editing a figure
 
