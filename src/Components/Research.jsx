@@ -33,7 +33,7 @@ const publications = [
   {
     title: "Q-GEAR: Improving Quantum Simulation Framework",
     authors: "Z. Guo, Z. Pan, J. Balewski et al.",
-    venue: "ACM, 2025",
+    venue: "ICPP '25: 54th International Conference on Parallel Processing",
     description:
       "An automation tool for next-generation quantum circuit simulation on HPC clusters, implemented in C++ and Python using Qiskit. Demonstrates scalable simulation of NISQ-era circuits on NERSC supercomputers.",
     url: "https://dl.acm.org/doi/pdf/10.1145/3754598.3754608",
