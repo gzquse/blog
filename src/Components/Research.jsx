@@ -110,10 +110,6 @@ const Research = () => {
             </div>
           ))}
         </div>
-        <p className="small" style={{ marginTop: "1.5rem", fontStyle: "italic", color: "#888" }}>
-          Illustrations above are hand-crafted SVG diagrams that schematically summarize each
-          paper&apos;s core idea. They are not auto-generated from experimental data.
-        </p>
       </div>
     </section>
   );
