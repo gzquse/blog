@@ -11,10 +11,10 @@ import pubQuantumEncoding from "../images/pub-quantum-encoding.svg";
 import pubQpie from "../images/pub-qpie.svg";
 
 /**
- * Publication images are hand-crafted SVG illustrations that visually
- * summarize each paper's core idea. They are not generated from data;
- * instead they were designed as schematic diagrams using standard SVG
- * markup (see src/images/pub-*.svg).
+ * Publication images are SVG illustrations generated with the help of GitHub
+ * Copilot (Claude model) to visually summarize each paper's core idea. They
+ * use only standard SVG primitives (see src/images/pub-*.svg). For prompting
+ * and reproduction details see IMAGE_PROVENANCE.md.
  */
 const publications = [
   {
@@ -33,7 +33,7 @@ const publications = [
   {
     title: "Q-GEAR: Improving Quantum Simulation Framework",
     authors: "Z. Guo, Z. Pan, J. Balewski et al.",
-    venue: "ACM, 2025",
+    venue: "ICPP '25: 54th International Conference on Parallel Processing",
     description:
       "An automation tool for next-generation quantum circuit simulation on HPC clusters, implemented in C++ and Python using Qiskit. Demonstrates scalable simulation of NISQ-era circuits on NERSC supercomputers.",
     url: "https://dl.acm.org/doi/pdf/10.1145/3754598.3754608",
