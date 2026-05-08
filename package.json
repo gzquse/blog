@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Educator JS Codespace Template",
   "source": "src/index.html",
-  "homepage": "https://gzquse.github.io/blog",
+  "homepage": "https://ziqguo.com",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url /blog/ && node scripts/postbuild.js",
-    "build-gh": "npm run build",
+    "build": "parcel build --public-url / && node scripts/postbuild.js",
+    "build-gh": "npm run build && node -e \"require('fs').writeFileSync('dist/CNAME', 'ziqguo.com\\\\n')\"",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
